@@ -1,2 +1,1 @@
-# Room-Database
-# Room-MVVM-Clean
+# Room-MVVM-Clean archtecture
