@@ -15,6 +15,8 @@ import com.thyagoneves.roommvvm.viewmodel.main.UserViewModelFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.koin.android.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var userDao: UserDao
     private lateinit var binding: ActivityMainBinding
     private lateinit var viewModel: UserViewModel
+
     private lateinit var adapter: UserAdapter
     private var userList: MutableList<User> = mutableListOf()
 
